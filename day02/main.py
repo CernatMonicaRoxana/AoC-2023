@@ -33,7 +33,6 @@ def valid_game_1(game):
 
 def part_2():
     games = open("input.txt")
-    max_conf = {}
     sumi = 0
     for game in games:
         power = 1
@@ -55,7 +54,6 @@ def get_hands_from_game_2(game):
 
 
 def valid_game_2(game="3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green"):
-    bag_1 = {"red": 12, "green": 13, "blue": 14}
     max_cubes = {"red": 0, "green": 0, "blue": 0}
 
     hands = game.split("; ")
